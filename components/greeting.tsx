@@ -11,18 +11,18 @@ export const Greeting = () => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 10 }}
         transition={{ delay: 0.5 }}
-        className="text-2xl font-semibold"
+        className="text-2xl font-semibold text-primary"
       >
-        Hello there!
+        Welcome to Roasty!
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 10 }}
         transition={{ delay: 0.6 }}
-        className="text-2xl text-zinc-500"
+        className="text-xl mt-2 text-muted-foreground"
       >
-        How can I help you today?
+        Let&apos;s have a warm, meaningful conversation today.
       </motion.div>
     </div>
   );

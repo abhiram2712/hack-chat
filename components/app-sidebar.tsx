@@ -34,8 +34,8 @@ export function AppSidebar({ user }: { user: User | undefined }) {
               }}
               className="flex flex-row gap-3 items-center"
             >
-              <span className="text-lg font-semibold px-2 hover:bg-muted rounded-md cursor-pointer">
-                Chatbot
+              <span className="text-lg font-semibold px-2 text-primary hover:bg-secondary/50 rounded-md cursor-pointer transition-colors">
+                Roasty
               </span>
             </Link>
             <Tooltip>
@@ -43,7 +43,7 @@ export function AppSidebar({ user }: { user: User | undefined }) {
                 <Button
                   variant="ghost"
                   type="button"
-                  className="p-2 h-fit"
+                  className="p-2 h-fit text-primary hover:text-primary/80 hover:bg-secondary/50"
                   onClick={() => {
                     setOpenMobile(false);
                     router.push('/');
